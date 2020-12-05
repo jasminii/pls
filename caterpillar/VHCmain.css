@@ -1,0 +1,356 @@
+/*COVER PAGE*/
+/*center title n author*/
+html, body {margin:0;
+            height: 100%;
+            font-size:40px;
+            background: white;
+            color: black;
+            font-family: Garamond, serif;}  
+            }
+/*p {
+  margin-left: 20px;
+}*/
+
+img {max-width: 100%;
+    }
+
+
+/*COVER.................................*/
+#cover {
+  background:url("../images/cover.png");
+  background-size:cover; 
+}
+
+#title {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  }
+
+#start {
+  position: absolute;
+  bottom: 35%;
+  left: 10%;
+  color: white;
+  font-size: 18px;
+  font-family: Garamond, Serif;
+  cursor:pointer;
+  }
+
+
+/*new stuff*/
+.cat {
+  display:none;
+}
+
+#cat1 {
+    display:block;
+}
+
+.catContain {
+  display:grid;
+  grid-template-columns: repeat(6,1fr)
+}
+/*then in html u will have <div class="catContain">  to contain all ur fruits to be in the grid*/
+
+
+/*PAGE 1...........................*/
+/*makes moon image the background*/
+#vhc1 {
+  background:url("../images/moon.jpg");
+  background-size:cover; 
+  color: white; 
+}
+
+#egg {
+  position: absolute;
+  height: 11%;
+  bottom: 40%;
+  left: 25%;
+  display: block;
+  cursor:pointer;
+}
+
+.shake:hover {
+animation: shake 0.5s;
+animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+
+
+/*PAGE 2.........................*/
+#vhc2 {
+  background:url("../images/sun.png");
+  background-size:cover;  
+}
+
+#suncat {
+  position: absolute;
+  height: 10%;
+  bottom: 8.5%;
+  margin-left: 6%;
+  display: block;
+  cursor:pointer;
+}
+
+
+/*pop effect on caterpillar p2. https://ianlunn.github.io/Hover/*/
+@-webkit-keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes hvr-pop {
+  50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+.hvr-pop {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pop:hover, .hvr-pop:focus, .hvr-pop:active {
+  -webkit-animation-name: hvr-pop;
+  animation-name: hvr-pop;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+/*PAGE 3...............................*/
+#vhc3 {
+  background:url("../images/sun close.jpg");
+  background-size:cover;  
+}
+
+#title3 {
+  position: absolute;
+  bottom: 7%;
+  left: 5%;
+  color:black;
+}
+
+
+#catsun {
+  position: absolute;
+ /* height: 23%;*/
+  bottom: 1.5%;
+  left: 37%;
+  display: block;
+  cursor:pointer;
+}
+
+/*vertical wobble effect on caterpillar p2. https://ianlunn.github.io/Hover/*/
+@-webkit-keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes hvr-wobble-vertical {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.hvr-wobble-vertical {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-wobble-vertical:hover, .hvr-wobble-vertical:focus, .hvr-wobble-vertical:active {
+  -webkit-animation-name: hvr-wobble-vertical;
+  animation-name: hvr-wobble-vertical;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+/*#suncat {
+    opacity: 0;
+    transition: opacity 2s ease-in-out 5s;
+}
+*/
+
+/*PAGE 4................................*/
+#vhc4, #vhc5, #vhc6, #vhc7, #vhc8, #vhc9 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+  text-align: center;
+  align-items: center;
+}
+/*
+#title4 {
+  position: absolute;
+  bottom: 50px;
+  left: auto;
+  right: auto;
+}*/
+
+
+/*#apple, #catapple {
+  top: 100px;
+}
+*/
+
+
+/*PAGE 5................................*/
+
+#vhc5 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+  text-align: center;
+  align-items: center;
+}
+
+
+/*PAGE 6................................*/
+#vhc6 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 100px;
+  text-align: center;
+  align-items: center;
+}
+
+.plums {
+  display:none;
+  float: left; /*this makes the images repeat in line, not appear random on page*/
+}
+
+#plum1 {
+    display:block;
+}
+
+.plumContain {
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+/*PAGE 7................................*/
+.straws {
+  display:none;
+  float: left;
+}
+
+#straw1 {
+    display:block;
+}
+
+.strawContain {
+  display:flex;
+  grid-template-columns: repeat(4,1fr);
+
+}
+
+/*PAGE 8................................*/
+.oranges {
+  display:none;
+  float: left;
+}
+
+#orange1 {
+    display:block;
+}
+
+.orangeContain {
+  display:flex;
+  grid-template-columns: repeat(5,1fr);
+
+}
+
+/*PAGE 9................................*/
+.foods {
+  display:none;
+  float: left;
+  max-width: 100px;
+}
+
+#food1 {
+    display:block;
+    left: 50px;
+}
+
+.foodContain {
+  display:grid;
+  grid-template-columns: repeat(9,1fr);
+  align-items: center;
+}
+
+#title99 {
+  position:absolute;
+  bottom:50px;
+  right:50px;
+}

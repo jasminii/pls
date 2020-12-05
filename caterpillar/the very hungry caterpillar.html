@@ -1,0 +1,298 @@
+<!doctype html>
+<html>
+	<head>
+
+
+	<title>
+	The Very Hungry Caterpillar
+	</title>
+<link rel="stylesheet" href="VHCmain.css" />
+ 	
+
+
+<!-- COVER PAGE  -->
+<div id="cover">
+<div id="title">
+	<h1>The Very Hungry Caterpillar</h1>
+	<p>By Eric Carle</p>
+	<p>girl u lookin at the wrong file</p>
+</div>
+	</head>
+	<style> 
+			body {font-size:40px;
+					background: white;
+					color: black;
+					font-family: Garamond, serif;}		
+
+	</style>
+
+	<img src="../images/cover.png" alt="cover image">
+	<div id="start">click to start</div>
+</div>
+
+
+
+
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="VHCscript.js"></script>
+
+
+
+<!-- PAGE 1 -->
+<div id="p1">
+	<p>
+	In the light of the moon a little egg lay on a leaf.
+		<style> 
+			b {font-size:50px;
+					background: white;
+					color: black;
+					font-family: Garamond, serif;}		
+
+		</style>
+	</p>
+		<img src="../images/leaf plain egg.png" alt="leaf plain egg image">
+</div>
+
+
+<div id="p2">
+<p>
+One Sunday morning the warm sun came up and-<b>pop!</b>-Out of the egg came a tiny and very hungry caterpillar.
+</p>
+<img src="../images/caterpillar sun.png" alt="cat sun image">
+</div>
+
+
+<p>
+He started to look for some food.
+</p>
+<img src="../images/cat upright.png" alt="cat upright image">
+
+
+
+<!-- maybe on each day scroll for as many times as food he eats until new text emerges pulling up each food item with each scroll, kinda like ur counting as u read through -->
+<p>
+On Monday he ate through <strong>one</strong> apple. But he was still hungry.
+</p>
+<img src="../images/apple.png" alt="apple image">
+<img src="../images/cat apple.png" alt="cat apple image">
+
+
+
+<p>
+On Tuesday he ate through <strong>two</strong> pears, but he was still hungry.
+</p>
+
+<img src="../images/pear.png" alt="pear image">
+<img src="../images/cat pear.png" alt="cat pear image">
+
+
+
+
+
+
+<p>
+On Wednesday he ate through <strong>three</strong> plums, but he was still hungry.
+</p>
+
+<img src="../images/plum.png" alt="plum image">
+<img src="../images/plum.png" alt="plum image">
+<img src="../images/cat plum.png" alt="cat plum image">
+
+
+
+<p>
+On Thursday he ate through <strong>four</strong> strawberries, but he was still hungry.
+</p>
+
+<img src="../images/strawberry.png" alt="strawberry image">
+<img src="../images/strawberry.png" alt="strawberry image">
+<img src="../images/strawberry.png" alt="strawberry image">
+<img src="../images/cat strawberry.png" alt="cat strawberry image">
+
+
+
+
+<p>
+On Friday he ate through <strong>five</strong> oranges, but he was still hungry.
+</p>
+
+<img src="../images/orange.png" alt="orange image">
+<img src="../images/orange.png" alt="orange image">
+<img src="../images/orange.png" alt="orange image">
+<img src="../images/orange.png" alt="orange image">
+<img src="../images/cat orange.png" alt="cat orange image">
+
+
+<!-- scrolls as a list w image, kinda like the when ur scrolling through times on iphone -->
+<p>
+On Saturday he ate through one piece of chocolate cake, one ice-cream cone, one pickle, one slice of swiss cheese, one slice of salami, one lollipop, one piece of cherry pie, one sausage, one cupcake, and one slice of watermelon. 
+</p>
+<img src="../images/foods.png" alt="foods image">
+
+<p>
+That night he had a stomachache!
+</p>
+
+
+<p>
+The next day was Sunday again. The caterpillar ate through one nice <span style="color: green">green</span> leaf, and after that he felt much better.
+<img src="https://i.pinimg.com/originals/2d/ae/84/2dae84455d07cd79001215f619ed6c6a.jpg">
+</p>
+<img src="../images/leaf.png" alt="leaf image">
+
+<p>
+Now he wasn’t hungry anymore - and he wasn’t a <span style="font-size: 30px">little</span> caterpillar any more.
+</p>
+
+<p>
+He was a <span style="font-size: 50px">big,</span> 
+		<span style="font-size: 70px">fat,</span> 
+		<span style="font-size: 90px">caterpillar</span>
+
+</p>
+<img src="../images/caterpillar big.png" alt="caterpillar big image">
+
+<p>
+He built a small house, called a cocoon, around himself. He stayed inside for more than two weeks.
+Then he nibbled a hole in the cocoon, pushed his way out and...
+</p>
+<img src="../images/cocoon.png" alt="cocoon image">
+
+<p>
+he was a beautiful <span class="multicolortext">butterfly!</span>
+
+    <style>
+      .multicolortext {
+        background-image: linear-gradient(to left, violet, indigo, green, blue, yellow, orange, red);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+    </style>
+<img src="../images/butterfly.png" alt="butterfly image">
+
+<p>
+	<span style="font-size: 250px">The End.</span>
+</p>
+<img src="../images/dots.png" alt="dots image">
+
+</p>
+
+
+</body>
+</html>
+
+
+
+
+
+			var d2t = $(".div2").offset().top;				//grab div2's position from top of the page and create a var.
+			var d3t = $(".div3").offset().top;				//grab div3's position from top of the page and create a var.
+
+			$(document).scroll(function(){					//listen for when you scroll execute code below.
+
+
+				var st = $(document).scrollTop();			//figuring out how far scrolled from top of page putting into var
+				if (st >= (d2t-10)) {						//if scroll distance is greater or equal to how far div2 is from top (minus 10) then do the follow
+					$(".div2").css({"opacity":"1"}) 		//change the css of div2 to visible.
+				} else {
+					$(".div2").css({"opacity":"0"})
+				}
+
+				if (st > (d3t-10)) {
+					$(".div3").css({"opacity":"1"})
+				} else {
+					$(".div3").css({"opacity":"0"})
+				}
+
+			})
+
+
+
+
+<!-- ............................................................................... -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>The Very Hungry Caterpillar Pg. 2</title>
+		<link rel="stylesheet" href="VHCmain.css" />
+	 </head>
+
+	<body id="vhc2">
+
+		<div id="title">
+			One Sunday morning the warm sun came up and-<b>pop!</b><br />
+			Out of the egg came a tiny and very hungry caterpillar.
+		</div>
+
+		<a href="vhc3.html"><img src="images/sun cat.png" class="hvr-pop" id="suncat" alt="sun w cat image"></a>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="VHCscript.js"></script>
+
+	</body>
+</html>
+
+/**** CSS ****/
+
+#vhc0 {
+  background:url('images/cover.png');
+  background-size:cover;
+  background-position:bottom left;
+}
+
+#vhc1 {
+  background: url("images/moon.jpg");
+  background-size: cover;
+  
+}
+
+#vhc2 {
+  background:url('images/sun.png');
+  background-size:cover;
+  
+}
+
+
+
+
+
+/**** JS ****/
+
+
+
+// // to make each class fruit appear on page in the defined grid after each click :( everytime i use this the whole js breaks!!!!
+// $(".pears").click(function(){						//When you click on anything with the class "pears", execute the following code
+// 	pearNumber = $(this).attr("id")					//read the ID of whatever image you clicked on and assign it to a variable called
+// 	pearNumber = pearNumber.replace("pear","")		//removing the text "pear" from the variable.
+// 	pearNumber = parseInt(pearNumber)				//reading pearNumber now as a real numnber
+// 	pearNumber = pearNumber+1;						//add one to the number.
+// 	pearNumber = "#pear"+pearNumber 				//convert number to the ID of the item you want to fade in
+
+// 	$(pearNumber).fadeIn(500)
+
+// 	//	$(pearsNumber.fadeIn(500))
+// });
+
+
+
+$("#pear1").click(function(){
+	$("#pear2").fadeIn(500)
+})
+
+$("#pear2").click(function(){
+	$("#catpear").fadeIn(500)
+	$("#pear2").fadeOut(500)
+})
+
+
+
